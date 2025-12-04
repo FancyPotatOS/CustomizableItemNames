@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "customizableitemname.start": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "customizableitemname:trigger/start"
+  }
+}

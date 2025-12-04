@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "change_item_name": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "change_item_name": {
+                    "min": 1
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "change_item_name": {
+                    "max": -1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "customizableitemname:trigger/change_item_name"
+  }
+}
